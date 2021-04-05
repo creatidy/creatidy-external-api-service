@@ -1,2 +1,4 @@
 requests~=2.25.1
 mysql-connector-python~=8.0.23
+hvac~=0.10.9
+PyJWT~=2.0.1
