@@ -43,7 +43,7 @@ class HolidayCalculator(object):
 
     @staticmethod
     def previous_working_day(date):
-        checked_date = date
+        checked_date = date - datetime.timedelta(days=1)
         while HolidayCalculator.is_holiday(checked_date):
             checked_date = checked_date - datetime.timedelta(days=1)
         return checked_date
